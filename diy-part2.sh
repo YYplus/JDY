@@ -17,6 +17,10 @@ rm -rf  feeds/luci/themes/luci-theme-argon
 
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
+rm -rf ./feeds/luci/applications/luci-app-netdata/  
+
+git clone https://github.com/Jason6111/luci-app-netdata ./feeds/luci/applications/luci-app-netdata/
+
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='YOY'' package/lean/default-settings/files/zzz-default-settings
 
 sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
