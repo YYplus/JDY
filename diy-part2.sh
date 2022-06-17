@@ -21,7 +21,7 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='YOY'' package/l
 
 sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
 
-sed -i 's/R22.5.5/For FMJYY23/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.6.16/For FMJYY23/g' package/lean/default-settings/files/zzz-default-settings
 
 sed -i 's/set wireless.default_radio${devidx}.ssid=OpenWrt/set wireless.default_radio0.ssid=JDY/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
