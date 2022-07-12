@@ -21,7 +21,7 @@ rm -rf ./feeds/luci/applications/luci-app-netdata/
 
 git clone https://github.com/Jason6111/luci-app-netdata ./feeds/luci/applications/luci-app-netdata/
 
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='YOY'' package/lean/default-settings/files/zzz-default-settings
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='G-DOCK'' package/lean/default-settings/files/zzz-default-settings
 
 sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
 
